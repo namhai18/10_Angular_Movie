@@ -1,0 +1,7 @@
+<div *ngIf="lichChieu" class="container">
+  <div *ngFor="let lich of lichChieu.splice(0, 5)" class="row">
+    <a routerLink="/checkout/{{ lich.maLichChieu }}">{{
+      lich.ngayChieuGioChieu
+    }}</a>
+  </div>
+</div>
